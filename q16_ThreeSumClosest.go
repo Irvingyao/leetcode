@@ -39,9 +39,6 @@ func ThreeSumClosest(nums []int, target int) int {
 				for {
 					if m >= n {
 						if math.Abs(float64(nums[i]+nums[m]+nums[n+1]-target)) < math.Abs(float64(res-target)) {
-
-							//fmt.Println(i,m,n,nums[i],nums[m],nums[n])
-
 							res = nums[i]+nums[m]+nums[n+1]
 						}
 						break
